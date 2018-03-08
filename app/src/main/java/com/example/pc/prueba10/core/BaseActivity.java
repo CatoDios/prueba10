@@ -10,6 +10,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -77,12 +78,12 @@ public abstract  class BaseActivity extends AppCompatActivity {
     }
 
     public void showMessage(String message) {
-        CoordinatorLayout container = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
+        FrameLayout container = (FrameLayout) findViewById(R.id.coordinatorLayout);
         this.showMessageSnack(container, message, R.color.colorPrimaryDark);
     }
 
     public void showMessageError(String message) {
-        CoordinatorLayout container = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
+        FrameLayout container = (FrameLayout) findViewById(R.id.coordinatorLayout);
         this.showMessageSnack(container, message,R.color.error_red);
     }
     @Override

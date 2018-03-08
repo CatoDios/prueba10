@@ -6,7 +6,8 @@ import com.example.pc.prueba10.R;
 import com.example.pc.prueba10.core.BaseActivity;
 import com.example.pc.prueba10.utils.ActivityUtils;
 
-public class QuestionActivity extends BaseActivity {
+public class QuestionActivity extends BaseActivity  {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +25,7 @@ public class QuestionActivity extends BaseActivity {
                     fragment, R.id.coordinatorLayout);
         }
 
-
-
-
-
     }
+
 
 }
